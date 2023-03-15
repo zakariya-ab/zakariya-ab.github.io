@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="imgs/me.png">
+    <title>GumFolio</title>
+  </head>
+  <body>
+    <div class="scrolltracker"></div>
+    <div class="header">
+      <h2 class="gumfolio">GumFolio</h2>
+      <ul>
+        <li><a href="#home-section" id="homebtn ">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#socials-section">Socials</a></li>
+      </ul>
+    </div>
+
+    <div class="maincontent">
+      <!-- home -->
+
+      <div class="home" id="home-section">
+        <div class="content">
+          <img src="imgs/me.png" alt="my pic" />
+          <div>
+            <p>
+              Hi there, <br />
+              i'm <span style="color: #ffe14d">Zakariya</span>
+            </p>
+            <button type="submit" id="abtmebtn">About Me</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+
+      <div class="about" id="about-section">
+        <div class="info">
+          <h3>Information</h3>
+          <table>
+            <tr>
+              <th class="infoname">Name</th>
+              <th>Zakariya Ait Ballouk</th>
+            </tr>
+            <tr>
+              <th class="infoname">Birthday</th>
+              <th>11 June 2004</th>
+            </tr>
+            <tr>
+              <th class="infoname">Nationality</th>
+              <th>Moroccan</th>
+            </tr>
+            <tr>
+              <th class="infoname">Languages</th>
+              <th>Arabic - French - English</th>
+            </tr>
+            <tr>
+              <th class="infoname">Skills</th>
+              <th>HTML/CSS - JavaScript</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="infotext">
+          <h3>A little bit about Me</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            dicta suscipit provident perspiciatis doloribus placeat laborum
+            iure, ab porro explicabo modi, alias distinctio perferendis sit.
+            Delectus dolorum provident id exercitationem, optio in neque quas
+            tenetur, fugiat dicta dolores asperiores dolorem?
+          </p>
+        </div>
+      </div>
+
+      <!-- projects -->
+
+      <div class="projects" id="projects-section">
+        <h3>Projects</h3>
+        <div class="container">
+          <div class="project prj1">
+            <h4>To-Do List</h4>
+            <img
+              class="imgsprj imgprj1"
+              id="walo"
+              src="imgs/prj1.jpg"
+              alt="prj1 image"
+            />
+            <button class="prjbtns prjbtn1">Visit</button>
+          </div>
+
+          <div class="project prj2">
+            <h4>Calculator</h4>
+            <img class="imgsprj imgprj2" src="imgs/prj2.jpg" alt="prj2 image" />
+            <button class="prjbtns prjbtn2">Visit</button>
+          </div>
+
+          <div class="project prj3">
+            <h4>GumFolio</h4>
+            <img class="imgsprj imgprj3" src="imgs/prj3.png" alt="prj3 image" />
+            <button class="prjbtns prjbtn3">Visit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- socials -->
+
+      <div class="socials" id="socials-section">
+        <h3>Contact Me</h3>
+        <div class="socials-cont">
+          <!-- <div class="accs">
+            <div>
+              <img src="imgs/gmail.png" alt="" />
+              <h5>Email</h5>
+            </div>
+            <div>
+              <img src="imgs/instagram.png" alt="" />
+              <h5>Instgram</h5>
+            </div>
+            <div>
+              <img src="imgs/discord.png" alt="" />
+              <h5>Discord</h5>
+            </div>
+
+            <div class="contact"></div>
+          </div> -->
+
+          <div class="acclinks">
+            <div>
+              <a href="mailto:bomm1squad2@gmail.com" target="_blank">
+                <button type="submit"><img src="imgs/gmail.png" alt="" />Email</button>
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/its_zeko_ab/" target="_blank">
+                <button type="submit"><img src="imgs/instagram.png" alt="" />Instagram</button>
+              </a>
+            </div>
+            <div>
+              <a href="https://discord.gg/2Dey8925b3" target="_blank">
+                <button type="submit"><img src="imgs/discord.png" alt="" />Discord</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="emailbtnitems">
+            <div class="emailinputs">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <textarea
+              cols="55"
+              rows="5"
+              placeholder="Write me anything"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+
+    <div class="copyright">
+      <p>Copyright © 2023 <a href="#home-section">Zakariya</a>.</p>
+    </div>
+
+    <!-- script -->
+  </body>
+</html>
