@@ -15,6 +15,7 @@ button {
   font-family: "Franklin Gothic Medium", "Franklin Gothic",
     "ITC Franklin Gothic", Arial, sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -61,7 +62,7 @@ a {
   align-items: center;
   margin: 10px 10%;
   border-radius: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header h2 {
@@ -76,17 +77,17 @@ a {
   cursor: default;
 }
 
-.header ul {
+.navBarul {
   list-style: none;
-  width: 30%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1.3rem;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-.header ul li a {
+.navBarul li a {
   text-decoration: none;
   color: #fff;
   border-bottom: 2px #fff solid;
@@ -100,6 +101,14 @@ a {
   color: #ff1a29;
   border-bottom: 2px #ff1a29 solid;
   font-size: 1.5rem;
+}
+
+.navbaricon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  display: none;
+  filter: invert(100%);
 }
 
 .home {
@@ -180,8 +189,8 @@ a {
 }
 
 .infotext {
-  width: 35%;
-  padding: 0 40px;
+  width: 45%;
+  padding: 0 20px;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -205,6 +214,12 @@ a {
   font-size: 1.5rem;
 }
 
+#gumball {
+  color: #ffe14d;
+  font-size: 1.7rem;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
 table {
   border-collapse: collapse;
 }
@@ -222,7 +237,7 @@ table {
 }
 
 .projects {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background: linear-gradient(to right, #a1a9c4, #31384e);
   display: flex;
@@ -240,7 +255,6 @@ table {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -366,6 +380,7 @@ table {
   border-radius: 5px;
   font-size: 18px;
   transition: all 0.2s ease-out;
+  margin: 0 5px;
 }
 
 .acclinks div a button:hover {
@@ -419,4 +434,208 @@ table {
 
 .copyright p a:hover {
   color: #2f3559;
+}
+
+@media screen and (max-width: 1300px) {
+  .project {
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 1100px){
+
+  .project{
+    height: 440px;
+  }
+
+  .project:hover .imgsprj{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+
+  .header h2 {
+    font-size: 2.5rem;
+  }
+
+  .header ul {
+    font-size: 1.1rem;
+  }
+
+  .home {
+    justify-content: center;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .infotext {
+    padding: 0;
+    width: 50%;
+  }
+
+  .infotext h3 {
+    font-size: 2rem;
+  }
+
+  .infotext p {
+    font-size: 1.2rem;
+  }
+
+  .info h3 {
+    font-size: 2rem;
+  }
+
+  .info table tr th {
+    padding: 3px 20px;
+    font-size: 1.2rem;
+  }
+
+
+  .projects{
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .projects h3{
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .container{
+    width: 100%;
+    height: auto;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 44%;
+  }
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    height: auto;
+    flex-wrap: wrap-reverse;
+    padding: 60px 0;
+  }
+
+  .infocontent {
+    width: 100%;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activescroll {
+    background-color: #1f222d;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    border-radius: 0;
+    justify-content: space-around;
+  }
+
+  #gumball {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .gumfolio {
+    position: fixed;
+    left: 10px;
+  }
+
+  .navbaricon {
+    display: block;
+    position: fixed;
+    right: 10px;
+  }
+
+  .navBarul {
+    display: none;
+    border-top: #fff 2px solid;
+  }
+
+  .navbarclick {
+    display: block;
+    position: fixed;
+    top: 80px;
+    background-color: #1f222d;
+    padding: 10px 0;
+    height: 180px;
+    width: 100vw;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+
+  .navbarclick li {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .project {
+    padding: 0 20px;
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .infotext{
+    text-align: left;
+  }
+
+  .info table tr th {
+    text-align: left;
+    font-size: 1rem;
+    padding: 5px  5px ;
+  }
+
+  .content {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .content img {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  .content div {
+    padding: 10px 5px;
+    margin-left: 10px;
+  }
+
+  .content div p {
+    font-size: 1.4rem;
+  }
+
+  .content div button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  .socials {
+    height: auto;
+    padding: 20px 0;
+  }
+  .acclinks {
+    flex-direction: column;
+  }
+
+  .acclinks div {
+    margin: 5px 0;
+  }
 }

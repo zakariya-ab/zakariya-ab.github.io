@@ -8,7 +8,8 @@ let aboutPage = document.querySelector('.about');
 let projectPage = document.querySelector('.projects');
 let homebtn = document.querySelector('.homebtn');
 
-console.log(scrollTracker.offsetHeight);
+// console.log(scrollTracker.offsetHeight);
+
 // console.log(navBar.offsetTop);
 
 window.addEventListener('scroll', () => {
@@ -68,4 +69,27 @@ prjCntainer.forEach((prj) => {
   });
 });
 
+//nav bar icon functions
 
+let navBaIcon = document.querySelector('.navbaricon');
+let navBarUl = document.querySelector('.navBarul');
+
+
+
+navBaIcon.addEventListener('click', function(){
+  if (navBarUl.classList.contains('navbarclick')){
+    navBarUl.classList.remove('navbarclick');
+  }
+  else{
+    navBarUl.classList.add('navbarclick');
+  }
+
+});
+
+navBarUl.addEventListener('click', function(){
+  navBarUl.classList.remove('navbarclick');
+});
+
+
+
+ 
