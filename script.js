@@ -90,6 +90,24 @@ navBarUl.addEventListener('click', function(){
   navBarUl.classList.remove('navbarclick');
 });
 
+// scroll Effect
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry)=> {
+      
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          console.log(entry)
+      }
+      // else{
+      //     entry.target.classList.remove('show');
+      // }
+      
+  });
+});
+
+const hidenElemnets = document.querySelectorAll('.hidden');
+
+hidenElemnets.forEach((el) => observer.observe(el));
 
  
